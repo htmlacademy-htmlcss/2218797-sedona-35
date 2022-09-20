@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vadim Ivlev](https://up.htmlacademy.ru/htmlcss/35/user/2218797).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
