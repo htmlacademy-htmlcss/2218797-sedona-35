@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/ptsans-400.woff2') format('woff2');
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/ptsans-700.woff2') format('woff2');
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -34,18 +34,6 @@ body {
   text-decoration: none;
   font-weight: 700;
   text-align: center;
-}
-
-.navigation-search a {
-  background-image: url("../images/icons/search.svg");
-  background-repeat: no-repeat;
-  color: #000000;
-}
-
-.navigation-favourites a {
-  background-image: url("../images/icons/favourites.svg");
-  background-repeat: no-repeat;
-  color: #000000;
 }
 
 .hero-index {
@@ -172,30 +160,6 @@ body {
   text-decoration: none;
 }
 
-.button-vk {
-  background-image: url("../images/social/vk.svg");
-  background-repeat: no-repeat;
-  color: #83B3D3;
-}
-
-.button-telegram {
-  background-image: url("../images/social/telegram.svg");
-  background-repeat: no-repeat;
-  color: #83B3D3;
-}
-
-.button-youtube {
-  background-image: url("../images/social/youtube.svg");
-  background-repeat: no-repeat;
-  color: #83B3D3;
-}
-
-.htmlacademy-link {
-  background-image: url("../images/icons/htmlacademy-logo.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
 .filter-wrapper {
   color: #FFFFFF;
   background-color: #9ca8aa;
@@ -212,12 +176,6 @@ body {
 
 .breadcrumbs-item {
   font-size: 16px;
-}
-
-.home-icon {
-  background-image: url("../images/icons/breadcrumbs-home.svg");
-  background-repeat: no-repeat;
-  color: #83B3D3;
 }
 
 .hotels-filter fieldset {
@@ -238,25 +196,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-
-.grid-view {
-  background-image: url("../images/icons/grid-view.svg");
-  background-repeat: no-repeat;
-  color: #83B3D3;
-}
-
-.single-view {
-  background-image: url("../images/icons/single-view.svg");
-  background-repeat: no-repeat;
-  color: #83B3D3;
-}
-
-.list-view {
-  background-image: url("../images/icons/list-view.svg");
-  background-repeat: no-repeat;
-  color: #83B3D3;
-}
-
 
 .hotel-card-link {
   color: inherit;
@@ -285,14 +224,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-}
-
-.star {
-  background-image: url("../images/icons/star.svg");
-  background-repeat: no-repeat;
-  color: #83B3D3;
-  width: 18px;
-  height: 17px;
 }
 
 .rating-value {
