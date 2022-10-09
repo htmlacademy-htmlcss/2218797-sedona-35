@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -24,13 +25,13 @@
               <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+          <ul class="navigation-list">
+            <li class="navigation-item navigation-search">
               <a href="#" class="navigation-link">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-favourites">
               <a href="#" class="navigation-link">
                 <span class="visually-hidden">Избранное</span><span class="count">12</span>
               </a>
@@ -48,7 +49,7 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a href="index.html" class="breadcrumbs-link">
+                <a href="index.html" class="breadcrumbs-link home-icon">
                   <span class="visually-hidden">Домой</span>
                 </a>
               </li>
@@ -113,8 +114,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="button apply" type="submit">Применить</button>
+              <button class="button reset" type="reset">Сбросить</button>
             </form>
           </section>
         </div>
@@ -132,17 +133,17 @@
 
             <ul class="view-list">
               <li class="view-list-item">
-                <a href="#" class="button button-dark">
+                <a href="#" class="button grid-view button-dark">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
               <li class="view-list-item">
-                <a href="#" class="button">
+                <a href="#" class="button single-view">
                   <span class="visually-hidden">Показать карточку</span>
                 </a>
               </li>
               <li class="view-list-item">
-                <a href="#" class="button">
+                <a href="#" class="button list-view">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -161,14 +162,14 @@
               </div>
               <div class="detail-favourites-wrapper">
                 <a href="#" class="detail-link">подробнее</a>
-                <button type="button" class="favourites-button">в избранное</button>
+                <button type="button" class="button favourites-button">в избранное</button>
               </div>
               <div class="rating-wrapper">
                 <div class="rating-star-wrapper">
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
                 </div>
                 <div class="rating-value">
                   Рейтинг: 8,5
@@ -186,14 +187,14 @@
               </div>
               <div class="detail-favourites-wrapper">
                 <a href="#" class="detail-link">подробнее</a>
-                <button type="button" class="favourites-button">в избранное</button>
+                <button type="button" class="button favourites-button green">в избранном</button>
               </div>
               <div class="rating-wrapper">
                 <div class="rating-star-wrapper">
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
                 </div>
                 <div class="rating-value">
                   Рейтинг: 9,2
@@ -211,13 +212,13 @@
               </div>
               <div class="detail-favourites-wrapper">
                 <a href="#" class="detail-link">подробнее</a>
-                <button type="button" class="favourites-button">в избранное</button>
+                <button type="button" class="button favourites-button">в избранное</button>
               </div>
               <div class="rating-wrapper">
                 <div class="rating-star-wrapper">
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
                 </div>
                 <div class="rating-value">
                   Рейтинг: 6,9
@@ -235,12 +236,13 @@
               </div>
               <div class="detail-favourites-wrapper">
                 <a href="#" class="detail-link">подробнее</a>
-                <button type="button" class="favourites-button">в избранное</button>
+                <button type="button" class="button favourites-button">в избранное</button>
               </div>
               <div class="rating-wrapper">
                 <div class="rating-star-wrapper">
-                  <span class="visually-hidden">Звезда</span>
-                  <span class="visually-hidden">Звезда</span>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
                 </div>
                 <div class="rating-value">
                   Рейтинг: 5,0
@@ -252,8 +254,8 @@
           <hr>
 
           <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+            <li class="pagination-item pagination-current">
+              <a class="pagination-link">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link">2</a>
@@ -264,7 +266,7 @@
             <li class="pagination-item">
               <a class="pagination-link">4</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-skip">
               <span class="">...</span>
             </li>
             <li class="pagination-item">
@@ -288,17 +290,17 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
+              <a class="button-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
+              <a class="button-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="button-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
               </a>
             </li>
@@ -310,7 +312,9 @@
         </section>
         <section class="footer-about">
           <h2 class="visually-hidden">Разработчик</h2>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">.html academy</span>
+          </a>
         </section>
       </footer>
     </div>
