@@ -14,17 +14,52 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
+  margin: 0;
 }
 
 .container {
   background-color: #FFFFFF;
+  margin: 0 auto;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.logo {
+  width: 140px;
+  margin-right: 44px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 464px;
+}
+
+.navigation-icons {
+  min-width: 312px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -53,6 +88,17 @@ body {
 
 .reasons {
   text-align: center;
+}
+
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-list-item {
+  flex-basis: 400px;
 }
 
 .reasons-title {
@@ -153,11 +199,34 @@ body {
   line-height: 26px;
 }
 
+.page-footer {
+  margin: 0 auto;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+}
+
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
   color: inherit;
   text-decoration: none;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.footer-contacts {
+  width: 335px;
+  text-align: center;
+}
+
+.footer-about {
+  width: 115px;
 }
 
 .filter-wrapper {
@@ -172,10 +241,23 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+}
+
+.breadcrumbs {
+  margin: 0;
 }
 
 .breadcrumbs-item {
   font-size: 16px;
+}
+
+.filter-wrapper {
+  padding: 35px 70px 70px 70px;
+}
+
+.hotels-filter {
+  display: flex;
 }
 
 .hotels-filter fieldset {
@@ -190,11 +272,31 @@ body {
   line-height: 23px;
 }
 
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-catalog {
+  padding: 57px 70px 56px 70px;
+}
+
+.result-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .search-count {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 200px;
+}
+
+.select-control {
+  width: 292px;
 }
 
 .hotel-card-link {
