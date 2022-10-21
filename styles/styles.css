@@ -48,12 +48,20 @@ body {
 }
 
 .page-header {
-  height: 64px;
+  min-height: 64px;
   z-index: 1;
+}
+
+.welcome-figure {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
   flex-grow: 1;
+  margin-top: -10px;
 }
 
 .navigation {
@@ -101,23 +109,32 @@ body {
 }
 
 .hero-index {
+  position: relative;
   background-color: #a8d5f5;
   background-image: url("../images/hero-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  padding: 50px 371px 82px 371px;
 }
 
-.hero-image {
- margin-top: 52px;
-}
-
-.divider {
+.hero-index::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 57px;
   background-image: url("../images/hero-divider.svg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 57px;
+  background-size: cover;
 }
+
+/* .divider {
+  background-image: url("../images/hero-divider.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 57px;
+} */
 
 .reasons {
   text-align: center;
@@ -140,7 +157,7 @@ body {
   justify-content: space-between;
 
   flex-basis: 400px;
-  height: 384px;
+  min-height: 384px;
   box-sizing: border-box;
 }
 
@@ -184,6 +201,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.reasons-list-item-img {
+  min-height: 384px;
 }
 
 .reasons-list-item-blue {
@@ -307,9 +328,15 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  column-gap: 27px;
+
 }
+
 
 .footer-social {
   width: 142px;
@@ -328,7 +355,7 @@ body {
   color: #FFFFFF;
   background-color: #9ca8aa;
   background-image: url("../images/catalog-filter-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
