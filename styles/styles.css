@@ -63,7 +63,7 @@ body {
 
 .main-container {
   flex-grow: 1;
-  margin-top: -10px;
+  margin-top: -13px;
 }
 
 .navigation {
@@ -112,7 +112,7 @@ body {
 
 .navigation-link-current {
   text-decoration-line: underline;
-  text-underline-offset: 28px;
+  text-underline-offset: 25px;
   text-decoration-color: #756257;
 }
 
@@ -195,15 +195,31 @@ body {
 }
 
 .reasons-list-item {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   flex-basis: 400px;
   min-height: 384px;
   box-sizing: border-box;
+}
+
+.reasons-list-item-with-img {
+  display: flex;
+  justify-content: space-between;
+  min-height: 384px;
+}
+
+.reason-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #FFF;
+  background-color: #82B3D3;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .reasons-title {
@@ -525,8 +541,18 @@ body {
 }
 
 .breadcrumbs-item {
-  margin-right: 29px;
   font-size: 16px;
+}
+
+.breadcrumbs-item:first-child a:before {
+  content: "";
+}
+
+.breadcrumbs-item a::before {
+  float: left;
+  padding-right: 10px;
+  color: #FFF;
+  content: ">";
 }
 
 .filter-wrapper {
@@ -552,6 +578,56 @@ body {
 .buttons-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.apply-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 50px;
+}
+
+.apply-button:hover,
+.apply-button:focus {
+  background-color: #68A2CA;
+}
+
+.apply-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+  background-color: transparent;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 50px;
+}
+
+.reset-button:hover {
+  opacity: 0.6;
+}
+.reset-button:focus {
+  border: 3px solid #83B3D3;
+}
+.reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-button:disabled {
+  opacity: 0.1;
 }
 
 .result-catalog {
