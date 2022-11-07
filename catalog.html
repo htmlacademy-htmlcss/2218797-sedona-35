@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
   </head>
-
   <body>
     <div class="container">
       <header class="page-header">
         <nav class="navigation">
           <a class="logo" href="index.html">
-            <img src="images/logo.svg" width="150" height="70" alt="Логотип City of Cedona.">
+            <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седона.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a href="index.html" class="navigation-link">Главная</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">О седоне</a>
+              <a href="#" class="navigation-link">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current">Гостиницы</a>
@@ -49,7 +49,6 @@
           </ul>
         </nav>
       </header>
-
       <main class="main-container main-inner">
         <div class="filter-wrapper">
           <header class="inner-header">
@@ -57,7 +56,7 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a href="index.html" class="breadcrumbs-link home-icon">
-                  <img src="images/icons/breadcrumbs-home.svg" alt="Домой.">
+                  <img src="images/icons/breadcrumbs-home.svg" width="13" height="13" alt="Домой.">
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -65,7 +64,6 @@
               </li>
             </ul>
           </header>
-
           <section class="hotels-filter-container">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -97,7 +95,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="hotels-type-group">
-                  <legend>Тип жилья:</legend>
+                  <legend>Тип Жилья:</legend>
                   <ul class="hotels-filter-list">
                     <li class="hotels-filter-item">
                       <label class="radio-control">
@@ -126,73 +124,71 @@
               <div class="price-wrapper">
                 <fieldset class="hotels-price-group">
                   <legend>Стоимость, ₽:</legend>
-
                   <ul class="hotels-filter-list">
                     <li class="hotels-filter-item price-inputs">
                       <div class="price-input-wrapper">
                         <label for="price-start" class="price-label">от</label>
-                        <input id="price-start" type="number" value="0" placeholder="0" name="price-start" class="field price-start">
+                        <input id="price-start" type="text" value="0" placeholder="0" name="price-start" class="field price-start">
                       </div>
                       <div class="price-input-wrapper">
                         <label for="price-end" class="price-label">до</label>
-                        <input id="price-end" type="number" value="9000" placeholder="9000" name="price-end" class="field price-end" placeholder="до">
+                        <input id="price-end" type="text" value="9000" placeholder="9000" name="price-end" class="field price-end">
                       </div>
                     </li>
                     <li class="hotels-filter-item">
                       <div class="range-scale">
-                        <div class="range-bar">
-                          <button type="button" class="range-toggle toggle-min"></button>
-                          <button type="button" class="range-toggle toggle-max"></button>
+                        <div class="range-bar" style="left: 0; width: 226px;">
+                          <button type="button" class="range-toggle toggle-min">
+                            <span class="visually-hidden">Минимальная стоимость.</span>
+                          </button>
+                          <button type="button" class="range-toggle toggle-max">
+                            <span class="visually-hidden">Максимальная стоимость.</span>
+                          </button>
                         </div>
                       </div>
-
                     </li>
                   </ul>
                 </fieldset>
                 <div class="buttons-wrapper">
-                  <button class="button dark-turquoise-button apply-button" type="submit">Применить</button>
-                  <button class="button transparent-button reset-button" type="reset">Сбросить</button>
+                  <button type="submit" class="button dark-turquoise-button apply-button">Применить</button>
+                  <button type="reset" class="button transparent-button reset-button">Сбросить</button>
                 </div>
               </div>
 
             </form>
           </section>
         </div>
-
         <section class="result-catalog">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="result-panel">
             <p class="search-count">Найдено гостиниц: 38</p>
-
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-
             <ul class="view-list">
               <li class="view-list-item active-btn">
                 <a href="#" class="image-link">
-                  <img src="images/icons/grid-view.svg" alt="Отобразись результат в виде сетки." >
+                  <img src="images/icons/grid-view.svg" width="16" height="14" alt="Отобразить результат в виде сетки." >
                 </a>
               </li>
               <li class="view-list-item">
                 <a href="#" class="image-link">
-                  <img src="images/icons/single-view.svg" alt="Отобразись результат по одной карточке." >
+                  <img src="images/icons/single-view.svg" width="16" height="14" alt="Отобразить результат по одной карточке." >
                 </a>
               </li>
               <li class="view-list-item">
                 <a href="#" class="image-link">
-                  <img src="images/icons/list-view.svg" alt="Отобразись результат в виде списка." >
+                  <img src="images/icons/list-view.svg" width="16" height="14" alt="Отобразить результат в виде списка." >
                 </a>
               </li>
             </ul>
           </div>
-
           <ul class="hotels-card-list">
             <li class="hotel-card-item">
               <a href="#" class="hotel-card-link">
-                <img src="images/hotels/hotel-amara-resort-and-spa.jpg" class="hotel-image" width="300" height="212" alt="Горы и звездное небо." class="hotel-card-image">
+                <img src="images/hotels/hotel-amara-resort-and-spa.jpg" class="hotel-image" width="300" height="212" alt="Горы и звездное небо.">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
               <div class="hotel-description-hotel">
@@ -202,7 +198,7 @@
                 <button type="button" class="button dark-turquoise-button">
                   в избранное
                 </button>
-                <img src="images/stars/star-4.svg" alt="4 звезды.">
+                <img src="images/stars/star-4.svg" width="140" height="37" alt="4 звезды.">
                 <div class="rating-value">
                   Рейтинг: 8,5
                 </div>
@@ -210,7 +206,7 @@
             </li>
             <li class="hotel-card-item">
               <a href="#" class="hotel-card-link">
-                <img src="images/hotels/hotel-villas-at-poco-diablo.jpg" class="hotel-image" width="300" height="212" alt="Горы, облачное небо и радуга." class="hotel-card-image">
+                <img src="images/hotels/hotel-villas-at-poco-diablo.jpg" class="hotel-image" width="300" height="212" alt="Горы, облачное небо и радуга.">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="hotel-description-hotel">
@@ -218,7 +214,7 @@
                 <span class="hotel-cost">От 5000 ₽</span>
                 <a href="#" class="button brown-button detail-button">подробнее</a>
                 <button type="button" class="button green-button">в избранном</button>
-                <img src="images/stars/star-4.svg" alt="4 звезды.">
+                <img src="images/stars/star-4.svg" width="140" height="37" alt="4 звезды.">
                 <div class="rating-value">
                   Рейтинг: 9,2
                 </div>
@@ -226,7 +222,7 @@
             </li>
             <li class="hotel-card-item">
               <a href="#" class="hotel-card-link">
-                <img src="images/hotels/hotel-desert-quail-inn.jpg" class="hotel-image" width="300" height="212" alt="Горы и ясное небо." class="hotel-card-image">
+                <img src="images/hotels/hotel-desert-quail-inn.jpg" class="hotel-image" width="300" height="212" alt="Горы и ясное небо.">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <div class="hotel-description-hotel">
@@ -234,7 +230,7 @@
                 <span class="hotel-cost">От 2500 ₽</span>
                 <a href="#" class="button brown-button detail-button">подробнее</a>
                 <button type="button" class="button dark-turquoise-button">в избранное</button>
-                <img src="images/stars/star-3.svg" alt="3 звезды.">
+                <img src="images/stars/star-3.svg" width="140" height="37" alt="3 звезды.">
                 <div class="rating-value">
                   Рейтинг: 6,9
                 </div>
@@ -242,7 +238,7 @@
             </li>
             <li class="hotel-card-item">
               <a href="#" class="hotel-card-link">
-                <img src="images/hotels/hotel-greentree-inn.jpg" class="hotel-image" width="300" height="212" alt="Горы и звездное небо." class="hotel-card-image">
+                <img src="images/hotels/hotel-greentree-inn.jpg" class="hotel-image" width="300" height="212" alt="Горы и звездное небо.">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <div class="hotel-description-hotel">
@@ -250,7 +246,7 @@
                 <span class="hotel-cost">От 1500 ₽</span>
                 <a href="#" class="button brown-button detail-button">подробнее</a>
                 <button type="button" class="button dark-turquoise-button">в избранное</button>
-                <img src="images/stars/star-2.svg" alt="2 звезды.">
+                <img src="images/stars/star-2.svg" width="140" height="37" alt="2 звезды.">
                 <div class="rating-value">
                   Рейтинг: 5,0
                 </div>
@@ -286,8 +282,9 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscribe-email">Адрес электронной почты.</label>
             <input type="email" id="subscribe-email" class="subscribe-email with-bg" name="subscribe-email" placeholder="Ваш e-mail">
-            <button class="button dark-turquoise-button subscribe-button" type="submit">Подписаться</button>
+            <button type="submit" class="button dark-turquoise-button subscribe-button">Подписаться</button>
           </form>
         </section>
       </main>
@@ -336,5 +333,4 @@
       </footer>
     </div>
   </body>
-
 </html>
