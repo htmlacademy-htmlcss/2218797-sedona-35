@@ -686,14 +686,6 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-/* .price-start::-webkit-outer-spin-button,
-.price-start::-webkit-inner-spin-button,
-.price-end::-webkit-outer-spin-button,
-.price-end::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-} */
-
 .price-label {
   position: absolute;
   right: 20px;
@@ -717,8 +709,6 @@ body {
   position: absolute;
   height: 4px;
   background-color: #FFF;
-  /* left: 0;
-  width: 226px; */
 }
 
 .range-toggle {
