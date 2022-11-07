@@ -500,7 +500,7 @@ body {
   padding-right: 14px;
   padding-left: 15px;
   color: #FFF;
-  background-image: url('../images/icons/breadcrumbs-divider.svg');
+  background-image: url("../images/icons/breadcrumbs-divider.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -572,7 +572,7 @@ body {
 }
 
 .checkbox-input[type="checkbox"]:checked + .checkbox-control-mark {
-  background-image: url('../images/icons/check.svg');
+  background-image: url("../images/icons/check.svg");
   background-repeat: no-repeat;
   background-position: top 6px left 4px;
 }
@@ -678,12 +678,14 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   border-radius: 4px 0 0 4px;
+  padding-right: 45px;
 }
 
 .price-end {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   border-radius: 0 4px 4px 0;
+  padding-right: 45px;
 }
 
 .price-label {
@@ -814,7 +816,7 @@ body {
   border-radius: 4px;
   background: #FFFFFF;
   margin-right: 70px;
-  background-image: url('../images/icons/select.svg');
+  background-image: url("../images/icons/select.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
   appearance: none;
@@ -1117,7 +1119,7 @@ body {
 
 .modal-title {
   text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   margin: 0;
   font-weight: 700;
   font-size: 30px;
@@ -1170,7 +1172,7 @@ body {
 }
 
 .form-search-label {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1179,7 +1181,7 @@ body {
 }
 
 .search-form-field {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   background-color: #F2F2F2;
   border-radius: 4px;
@@ -1296,14 +1298,14 @@ body {
 }
 
 .tooltip-text::before {
-  content: '';
+  content: "";
   position: absolute;
   transform: translateX(3px);
   left: 45%;
   top: -9px;
   width: 19px;
   height: 9px;
-  background-image: url('../images/icons/tooltip-rectangle.svg');
+  background-image: url("../images/icons/tooltip-rectangle.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
