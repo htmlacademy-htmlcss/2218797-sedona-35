@@ -421,12 +421,12 @@ body {
   fill: #83B3D3;
 }
 
-.footer-social-item a:hover > .icon,
-.footer-social-item a:focus > .icon {
+.footer-social-item:hover .icon,
+.footer-social-item:focus .icon {
   fill: #68A2CA;
 }
 
-.footer-social-item a:active  > .icon {
+.footer-social-item:active .icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -452,12 +452,12 @@ body {
   fill: #000;
 }
 
-.footer-about a:hover > .contact-icon,
-.footer-about a:focus > .contact-icon {
+.footer-about:hover .contact-icon,
+.footer-about:focus .contact-icon {
   fill: #756157;
 }
 
-.footer-about a:active > .contact-icon {
+.footer-about a:active .contact-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
