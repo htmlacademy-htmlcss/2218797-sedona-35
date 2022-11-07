@@ -457,7 +457,7 @@ body {
   fill: #756157;
 }
 
-.footer-about a:active .contact-icon {
+.footer-about:active .contact-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
